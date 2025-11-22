@@ -1,5 +1,6 @@
-
 # Briefing Paper: Adlington New Town & the Risks of Private-Equity-Led Development
+
+[Read the full report here](https://github.com/peternicholls/Adlington-New-Town/blob/main)
 
 _Last updated: November 2025_
 
@@ -59,7 +60,7 @@ _Last updated: November 2025_
 ### How the site was chosen
 
 - The New Towns Taskforce considered 100+ potential locations and shortlisted 12, including Adlington, **without open local consultation**.  
-- The Taskforce’s deputy chair has publicly acknowledged “ill feeling” around Adlington because **local communities were not engaged** during shortlisting for reasons of “confidentiality”.  
+- The Taskforce’s deputy chair has publicly acknowledged “ill feeling” around Adlington because **local communities were not engaged** during shortlisting for reasons of “confidentiality” and r[...]  
 
 ### Who controls the land and the plan?
 
@@ -78,7 +79,7 @@ The House of Lords Built Environment Committee, in its report **“New Towns: La
 - Secure long-term **funding for infrastructure** (transport, schools, healthcare).  
 - Potential for the state to retain an **ownership stake** via a development corporation to ensure long-term public interest.
 
-**Risk:** Adlington is emerging as a **privately led, investor-driven scheme**, rather than a publicly led development corporation. That raises questions about how residents can influence decisions and who will be accountable if promises are not met.
+**Risk:** Adlington is emerging as a **privately led, investor-driven scheme**, rather than a publicly led development corporation. That raises questions about how residents can influence decision[...]  
 
 ## 5. Risks linked to private equity involvement
 
@@ -140,7 +141,7 @@ You can adapt these for letters, meetings, social media or petitions.
 
 5. **Private equity vs public interest**  
    - The main landowner is a **Belport–Revcap private equity joint venture**. Their first legal duty is to investors, not to residents.  
-   - We have seen in the high street that private equity often extracts value quickly and moves on, leaving communities with the fallout. That model is **not suitable for planning and running a town**.
+   - We have seen in the high street that private equity often extracts value quickly and moves on, leaving communities with the fallout. That model is **not suitable for planning and running a t[...]  
 
 6. **Alternative approach**  
    - If new homes are needed, they should be:
@@ -153,28 +154,28 @@ You can adapt these for letters, meetings, social media or petitions.
 ### Official project information (for direct quotes & checking claims)
 
 - **Adlington New Town developer FAQ** (Belport/Revcap):  
-  <https://www.adlingtonnewtown.com/faqs/>
+  <https://www.adlingtonnewtown.com/faqs/>  
 - **New Towns Taskforce report to Government** (site selection, national policy):  
   <https://www.gov.uk/government/publications/new-towns-taskforce-report-to-government>
 
 ### Local news and campaigns
 
 - **Macclesfield Nub News – Adlington New Town coverage (topic page)**:  
-  <https://macclesfield.nub.news/topic/adlington-new-town>
+  <https://macclesfield.nub.news/topic/adlington-new-town>  
 - Article: **“Macclesfield MP launches petition to stop plans for new town in Adlington”**:  
-  <https://macclesfield.nub.news/news/local-news/macclesfield-mp-launches-petition-to-stop-plans-for-new-town-in-adlington-276301>
+  <https://macclesfield.nub.news/news/local-news/macclesfield-mp-launches-petition-to-stop-plans-for-new-town-in-adlington-276301>  
 - Article: **“Community comes together to protest plans to establish new town in Adlington”**:  
-  <https://macclesfield.nub.news/news/local-news/community-comes-together-to-protest-plans-to-establish-new-town-in-adlington-276774>
+  <https://macclesfield.nub.news/news/local-news/community-comes-together-to-protest-plans-to-establish-new-town-in-adlington-276774>  
 - **CPRE Cheshire briefing on Adlington New Town** (includes summary of Belport’s public event and links to local groups):  
-  <https://www.cprecheshire.org.uk/news/nov-2025-adlington-new-town-public-engagement/>
+  <https://www.cprecheshire.org.uk/news/nov-2025-adlington-new-town-public-engagement/>  
 
 ### Policy and scrutiny of new towns
 
 - **House of Lords Built Environment Committee – “New Towns: Laying the Foundations”** (summary):  
-  <https://committees.parliament.uk/committee/518/built-environment-committee/news/209876/new-towns-will-need-government-leadership-and-funding-says-new-lords-report/>
+  <https://committees.parliament.uk/committee/518/built-environment-committee/news/209876/new-towns-will-need-government-leadership-and-funding-says-new-lords-report/>  
 - **Parliamentary inquiry page: “New Towns: Creating Communities”** (call for evidence, background):  
-  <https://committees.parliament.uk/committee/518/built-environment-committee/news/210030/new-towns-creating-communities-inquiry-launched-by-lords-built-environment-committee/>
+  <https://committees.parliament.uk/committee/518/built-environment-committee/news/210030/new-towns-creating-communities-inquiry-launched-by-lords-built-environment-committee/>  
 - **Place North West – “Adlington new town pitch fleshed out”** (developer’s claims, numbers, timeline):  
-  <https://www.placenorthwest.co.uk/adlington-new-town-pitch-fleshed-out/>
+  <https://www.placenorthwest.co.uk/adlington-new-town-pitch-fleshed-out/>  
 - **Place North West – “New Towns Taskforce deputy chair acknowledges public ill feeling around Adlington”**:  
-  <https://www.placenorthwest.co.uk/new-towns-taskforce-deputy-chair-acknowledges-public-ill-feeling-around-adlington/>
+  <https://www.placenorthwest.co.uk/new-towns-taskforce-deputy-chair-acknowledges-public-ill-feeling-around-adlington/>  
