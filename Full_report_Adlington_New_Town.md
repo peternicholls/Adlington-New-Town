@@ -1,6 +1,7 @@
 
 # Adlington New Town: Private Equity, Housing, and Community Risk
 
+_Status: DRAFT - request for comments_
 _Last updated: November 2025_
 
 ---
