@@ -1,6 +1,8 @@
 
 # Briefing Paper: Adlington New Town & the Risks of Private-Equity-Led Development
 
+[Read the full report and analysis on the proposed Adlington new town development here](Full_report_Adlington_New_Town.md)
+
 _Status: DRAFT - request for comments_
 
 _Last updated: November 2025_
