@@ -1,0 +1,1 @@
+{"name": "adlington-new-town","version": "1.0.0","description": "A project for converting markdown to HTML.","main": "index.js","dependencies": {"marked": "^4.0.10","htmlparser2": "^7.0.0"},"scripts": {"start": "node index.js"},"author": "peternicholls","license": "ISC","date_created": "2025-11-23 23:24:55"}
