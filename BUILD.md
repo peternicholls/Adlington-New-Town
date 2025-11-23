@@ -6,6 +6,18 @@ This document explains how to build the static website from the Markdown documen
 
 This project uses a custom Node.js-based static site generator that converts Markdown files into a complete HTML website with navigation, professional styling, and responsive design.
 
+## Automated Build
+
+The repository includes a GitHub Actions workflow that **automatically builds the static site** whenever:
+- Markdown files (`.md`) are modified and committed
+- Build scripts or templates are updated
+
+The workflow runs `npm run build` and commits the generated `dist/` folder to the repository, making it ready to serve.
+
+### Manual Trigger
+
+You can also manually trigger the build workflow from the Actions tab on GitHub.
+
 ## Prerequisites
 
 - **Node.js** (version 14 or higher)

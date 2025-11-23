@@ -1,0 +1,38 @@
+name: Build Static Site
+
+on:
+  push:
+    paths:
+      - '**.md'
+      - 'build.js'
+      - 'template.html'
+      - 'styles.css'
+      - 'package.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build static site
+        run: npm run build
+        
+      - name: Commit and push dist folder
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -f dist/
+          git diff --staged --quiet || git commit -m "Auto-build: Generate static site from markdown [skip ci]"
+          git push

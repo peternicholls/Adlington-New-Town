@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUILD</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Documentation and analysis of the proposed Adlington New Town development">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="nav-title">Adlington New Town Documentation</h1>
+      <ul class="nav-menu">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="BUILD.html" class="active">BUILD</a></li>
+  <li><a href="Full_report_Adlington_New_Town.html">Full report Adlington New Town</a></li>
+  <li><a href="README.html">README</a></li>
+</ul>
+    </div>
+  </nav>
+  <main class="container">
+    <h1 id="build-instructions" tabindex="-1">Build Instructions</h1>
+<p>This document explains how to build the static website from the Markdown documentation files.</p>
+<h2 id="overview" tabindex="-1">Overview</h2>
+<p>This project uses a custom Node.js-based static site generator that converts Markdown files into a complete HTML website with navigation, professional styling, and responsive design.</p>
+<h2 id="automated-build" tabindex="-1">Automated Build</h2>
+<p>The repository includes a GitHub Actions workflow that <strong>automatically builds the static site</strong> whenever:</p>
+<ul>
+<li>Markdown files (<code>.md</code>) are modified and committed</li>
+<li>Build scripts or templates are updated</li>
+</ul>
+<p>The workflow runs <code>npm run build</code> and commits the generated <code>dist/</code> folder to the repository, making it ready to serve.</p>
+<h3 id="manual-trigger" tabindex="-1">Manual Trigger</h3>
+<p>You can also manually trigger the build workflow from the Actions tab on GitHub.</p>
+<h2 id="prerequisites" tabindex="-1">Prerequisites</h2>
+<ul>
+<li><strong>Node.js</strong> (version 14 or higher)</li>
+<li><strong>npm</strong> (comes with Node.js)</li>
+</ul>
+<h2 id="quick-start" tabindex="-1">Quick Start</h2>
+<ol>
+<li>
+<p><strong>Install dependencies:</strong></p>
+<pre><code class="language-bash">npm install
+</code></pre>
+</li>
+<li>
+<p><strong>Build the website:</strong></p>
+<pre><code class="language-bash">npm run build
+</code></pre>
+</li>
+<li>
+<p><strong>View the website:</strong>
+Open <code>dist/index.html</code> in your web browser, or use a local web server:</p>
+<pre><code class="language-bash"># Using Python 3
+cd dist
+python3 -m http.server 8000
+# Then open http://localhost:8000 in your browser
+
+# Or using Node.js http-server (install with: npm install -g http-server)
+cd dist
+http-server
+</code></pre>
+</li>
+</ol>
+<h2 id="available-scripts" tabindex="-1">Available Scripts</h2>
+<ul>
+<li><strong><code>npm run build</code></strong> - Generates the static website in the <code>dist/</code> folder</li>
+<li><strong><code>npm run clean</code></strong> - Removes the <code>dist/</code> folder</li>
+</ul>
+<h2 id="how-it-works" tabindex="-1">How It Works</h2>
+<h3 id="build-process" tabindex="-1">Build Process</h3>
+<p>The build script (<code>build.js</code>) performs the following steps:</p>
+<ol>
+<li><strong>Scans for Markdown files</strong> - Finds all <code>.md</code> files in the root directory</li>
+<li><strong>Creates the dist folder</strong> - Ensures the output directory exists</li>
+<li><strong>Generates the homepage</strong> - Creates <code>index.html</code> with links to all pages</li>
+<li><strong>Converts Markdown to HTML</strong> - Uses markdown-it to parse each <code>.md</code> file</li>
+<li><strong>Adds navigation</strong> - Generates a navigation menu for each page</li>
+<li><strong>Applies template</strong> - Wraps content in the HTML template</li>
+<li><strong>Copies CSS</strong> - Copies styling to the dist folder</li>
+</ol>
+<h3 id="file-structure" tabindex="-1">File Structure</h3>
+<pre><code>.
+├── README.md                          # Source markdown file
+├── Full_report_Adlington_New_Town.md  # Source markdown file
+├── build.js                           # Build script
+├── template.html                      # HTML template
+├── styles.css                         # CSS stylesheet
+├── package.json                       # Dependencies and scripts
+├── BUILD.md                           # This file
+└── dist/                              # Generated website (git-ignored)
+    ├── index.html                     # Homepage
+    ├── README.html                    # Converted from README.md
+    ├── Full_report_Adlington_New_Town.html  # Converted from Full_report...
+    └── styles.css                     # Copied stylesheet
+</code></pre>
+<h3 id="technologies-used" tabindex="-1">Technologies Used</h3>
+<ul>
+<li><strong>markdown-it</strong> - Markdown parser and HTML generator</li>
+<li><strong>markdown-it-anchor</strong> - Adds anchor links to headings</li>
+<li><strong>Node.js</strong> - JavaScript runtime for the build script</li>
+</ul>
+<h2 id="customization" tabindex="-1">Customization</h2>
+<h3 id="modifying-the-template" tabindex="-1">Modifying the Template</h3>
+<p>Edit <code>template.html</code> to change the HTML structure. The template uses placeholders:</p>
+<ul>
+<li><code>{{TITLE}}</code> - Page title</li>
+<li><code>{{NAV_MENU}}</code> - Navigation menu</li>
+<li><code>{{CONTENT}}</code> - Main content area</li>
+</ul>
+<h3 id="modifying-styles" tabindex="-1">Modifying Styles</h3>
+<p>Edit <code>styles.css</code> to customize the appearance. The CSS includes:</p>
+<ul>
+<li>Responsive design (mobile, tablet, desktop)</li>
+<li>Navigation styling</li>
+<li>Content typography</li>
+<li>Code block formatting</li>
+<li>Print styles</li>
+</ul>
+<h3 id="adding-new-pages" tabindex="-1">Adding New Pages</h3>
+<p>Simply add a new <code>.md</code> file to the root directory and run <code>npm run build</code>. The build script will automatically:</p>
+<ul>
+<li>Convert it to HTML</li>
+<li>Add it to the navigation menu</li>
+<li>Link it from the homepage</li>
+</ul>
+<h2 id="original-markdown-files" tabindex="-1">Original Markdown Files</h2>
+<p>The original Markdown files (<code>README.md</code> and <code>Full_report_Adlington_New_Town.md</code>) remain <strong>completely untouched</strong> by the build process. They serve as the source content and can be edited directly. After making changes, simply run <code>npm run build</code> to regenerate the website.</p>
+<h2 id="troubleshooting" tabindex="-1">Troubleshooting</h2>
+<h3 id="build-fails-with-%E2%80%9Ccannot-find-module%E2%80%9D" tabindex="-1">Build fails with “Cannot find module”</h3>
+<p>Make sure you’ve installed dependencies:</p>
+<pre><code class="language-bash">npm install
+</code></pre>
+<h3 id="navigation-menu-doesn%E2%80%99t-show-all-pages" tabindex="-1">Navigation menu doesn’t show all pages</h3>
+<p>The build script scans for <code>.md</code> files in the root directory only. Make sure your markdown files are in the project root.</p>
+<h3 id="styles-don%E2%80%99t-appear" tabindex="-1">Styles don’t appear</h3>
+<p>Ensure <code>styles.css</code> exists in the root directory. The build script will copy it to <code>dist/styles.css</code>.</p>
+<h2 id="development-workflow" tabindex="-1">Development Workflow</h2>
+<ol>
+<li>Edit the Markdown files (<code>README.md</code>, <code>Full_report_Adlington_New_Town.md</code>)</li>
+<li>Run <code>npm run build</code> to regenerate the website</li>
+<li>Open <code>dist/index.html</code> in a browser to preview changes</li>
+<li>Repeat as needed</li>
+</ol>
+<h2 id="publishing" tabindex="-1">Publishing</h2>
+<p>The <code>dist/</code> folder contains the complete static website and can be published to any web hosting service:</p>
+<ul>
+<li><strong>GitHub Pages</strong>: Commit the dist folder or use a GitHub Action</li>
+<li><strong>Netlify</strong>: Drag and drop the dist folder</li>
+<li><strong>Vercel</strong>: Import the project and set build command to <code>npm run build</code></li>
+<li><strong>Any static host</strong>: Upload the contents of the <code>dist/</code> folder</li>
+</ul>
+<h2 id="notes" tabindex="-1">Notes</h2>
+<ul>
+<li>The <code>dist/</code> folder is excluded from git via <code>.gitignore</code></li>
+<li>The <code>node_modules/</code> folder is excluded from git via <code>.gitignore</code></li>
+<li>The build process is idempotent - running it multiple times produces the same output</li>
+<li>All links in the Markdown are preserved in the HTML output</li>
+</ul>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Adlington New Town Documentation. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
