@@ -7,6 +7,23 @@ _Status: DRAFT - request for comments_
 
 _Last updated: November 2025_
 
+---
+
+## 🌐 Web Interface
+
+This repository includes a lightweight web server with a views tracker API. To run the site locally:
+
+```bash
+npm install
+npm start
+```
+
+Then visit `http://localhost:3000` in your browser to see the briefing paper with a live view counter.
+
+For API documentation, see [API.md](API.md).
+
+---
+
 ## 1. What is being proposed at Adlington?
 
 - A **new town of at least 14,000 homes** on roughly 1,000 hectares of mainly greenfield land between Macclesfield and Greater Manchester, centred on **Adlington, Cheshire**.  
