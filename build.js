@@ -168,7 +168,7 @@ function build() {
   const pages = getMarkdownFiles();
   
   if (pages.length === 0) {
-    console.error('❌ Error: No markdown files found!');
+    console.error('❌ Error: No markdown files found in the root directory!');
     process.exit(1);
   }
   
