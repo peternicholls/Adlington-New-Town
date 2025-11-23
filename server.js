@@ -8,7 +8,7 @@ const VIEWS_FILE = path.join(__dirname, 'views-data.json');
 
 // Middleware
 app.use(express.json());
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Initialize views data file if it doesn't exist
 function initializeViewsData() {
