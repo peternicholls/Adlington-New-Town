@@ -110,8 +110,11 @@ This is a simple implementation suitable for basic tracking. For production use 
 
 - Adding rate limiting to prevent abuse
 - Implementing authentication for POST requests
-- Using a proper database for better concurrency handling
+- Using a proper database for better concurrency handling and to avoid race conditions
 - Adding request validation and sanitization
+- Implementing file locking or atomic operations if staying with file-based storage
+
+**Note:** The current file-based implementation may have race conditions under very high concurrent load. For most use cases (small to medium traffic sites), this is acceptable. For high-traffic scenarios, consider using a database like SQLite, PostgreSQL, or Redis.
 
 ## License
 
